@@ -53,10 +53,10 @@ screen.setworldcoordinates(-180, -90, 180, 90)
 
 
 # load the world map image
-screen.bgpic("images/map.gif")
-screen.register_shape("images\iss.gif")
+screen.bgpic("Satellite Detection/images/map.gif")
+screen.register_shape("Satellite Detection/images\iss.gif")
 iss = turtle.Turtle()
-iss.shape("images\iss.gif")
+iss.shape("Satellite Detection/images\iss.gif")
 iss.setheading(45)
 iss.penup()
 
@@ -82,5 +82,5 @@ while True:
 	# Update the ISS location on the map
 	iss.goto(lon, lat)
 
-	# Refresh each 5 seconds
+	# Refresh each 1 seconds
 	time.sleep(1)
